@@ -15,7 +15,7 @@ void print_bytes(void* data, size_t length) {
 }
 
 int main(int argc, char** argv) {
- int a = 9;
+ int a = 25;
  double b = 18.9;
 
  print_bytes(&a, sizeof(int));

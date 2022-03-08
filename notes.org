@@ -1,0 +1,5 @@
+* Inbox
+** [2022-03-08 Вт 10:25] look at that. some enhanced iteration process
+  for (int i = 0; i < sizeof(*var); i++, ptr++) {
+
+[[file:~/repo/Extreme-C/ch01-essential-features/ExtremeC_examples_chapter1_21.c::for (int i = 0; i < sizeof(*var); i++, ptr++) {]]

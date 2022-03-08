@@ -12,15 +12,15 @@ int subtract(int a, int b) {
 }
 
 int main() {
-  int (*func_ptr)(int, int);
-  func_ptr = NULL;
+  int (*f_ptr)(int, int);
+  f_ptr = NULL;
 
-  func_ptr = &sum;
-  int result = func_ptr(5, 4);
+  f_ptr = &sum;
+  int result = f_ptr(5, 4);
   printf("Sum: %d\n", result);
 
-  func_ptr = &subtract;
-  result = func_ptr(5, 4);
+  f_ptr = &subtract;
+  result = f_ptr(5, 4);
   printf("Subtract: %d\n", result);
 
   return 0;
