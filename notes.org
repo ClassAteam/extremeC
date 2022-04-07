@@ -1,4 +1,12 @@
 * Inbox
+** [2022-04-07 Чт 11:26] look how to searilize double
+void _serialize_double(char* str, double num) {
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_ser.c::void _serialize_double(char* str, double num) {]]
+** [2022-04-07 Чт 09:56] look like function prototype
+typedef void (*req_cb_t)(
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_ser.h::typedef void (*req_cb_t)(]]
 ** [2022-03-23 Ср 14:40] incompleteness!!!
   // We have to have a pointer here since the type
   // person_t is incomplete.
