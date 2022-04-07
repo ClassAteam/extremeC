@@ -1,4 +1,22 @@
 * Inbox
+** [2022-03-23 Ср 14:40] incompleteness!!!
+  // We have to have a pointer here since the type
+  // person_t is incomplete.
+  struct person_t* person;
+
+[[file:~/repo/extremeC/ch08-inheritance-and-polymorphism/ExtremeC_examples_chapter8_3_student.c::// We have to have a pointer here since the type
+ // person_t is incomplete.
+ struct person_t* person;]]
+** [2022-03-22 Вт 14:16] You cannot even declare a variable out of it !!! (loot at the book)
+  struct list_t* list1 = list_malloc();
+
+[[file:~/repo/extremeC/ch06-oop-and-encapsulation/ExtremeC_examples_chapter6_3_main.c::struct list_t* list1 = list_malloc();]]
+** [2022-03-18 Пт 10:06] address of ptr and memory allocated there
+  printf("Address of ptr1: %p\n", (void*)&ptr1);
+  printf("Memory allocated by malloc at %p: ", (void*)ptr1);
+
+[[file:~/repo/extremeC/ch05-stack-and-heap/ExtremeC_examples_chapter5_3.c::printf("Address of ptr1: %p\n", (void*)&ptr1);
+ printf("Memory allocated by malloc at %p: ", (void*)ptr1);]]
 ** [2022-03-08 Вт 10:25] look at that. some enhanced iteration process
   for (int i = 0; i < sizeof(*var); i++, ptr++) {
 

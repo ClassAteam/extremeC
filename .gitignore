@@ -1,4 +1,5 @@
 *build*
+*idea*
 *.s
 *.o
 *.obj
