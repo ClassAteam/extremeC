@@ -1,5 +1,9 @@
 * Inbox
-** [2022-04-07 Чт 11:26] look how to searilize double
+** [2022-04-08 Пт 14:54] response structure
+struct calc_proto_resp_t {
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_resp.h::struct calc_proto_resp_t {]]
+** [2022-04-07 Чт 11:26] look how to serialize double
 void _serialize_double(char* str, double num) {
 
 [[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_ser.c::void _serialize_double(char* str, double num) {]]
