@@ -1,4 +1,6 @@
 *build*
+*user*
+.projectile
 *.s
 *.o
 *.obj

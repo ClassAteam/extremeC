@@ -1,4 +1,16 @@
 * Inbox
+** [2022-04-10 Вс 17:02] looks like defining global instance of cstack_type
+typedef struct cstack_type cstack_t;
+
+[[file:~/repo/Extreme-C/ch21-integration-with-other-languages/cstack.h::typedef struct cstack_type cstack_t;]]
+** [2022-04-02 Сб 08:18] look at this. returned result value from function compared directly
+  if (ftruncate(shm_fd, SH_SIZE * sizeof(char)) < 0) {
+
+[[file:~/repo/Extreme-C/ch17-process-execution/ExtremeC_examples_chapter17_4.c::if (ftruncate(shm_fd, SH_SIZE * sizeof(char)) < 0) {]]
+** [2022-03-14 Пн 22:16] how to hande function pointers in function's library
+polar_pos_2d_t (*func_ptr)(cartesian_pos_2d_t*);
+
+[[file:~/repo/Extreme-C/ch03-object-files/ExtremeC_examples_chapter3_4.c::polar_pos_2d_t (*func_ptr)(cartesian_pos_2d_t*);]]
 ** [2022-03-08 Вт 10:25] look at that. some enhanced iteration process
   for (int i = 0; i < sizeof(*var); i++, ptr++) {
 
