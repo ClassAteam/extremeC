@@ -1,4 +1,14 @@
 * Inbox
+** [2022-04-11 Пн 13:10] we let the loader know where it shoould look for  the shared objects
+LD_LIBRARY_PATH=$PWD/.. ./cstack_cpp.out
+
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/run_linux.sh::LD_LIBRARY_PATH=$PWD/.. ./cstack_cpp.out]]
+** [2022-04-11 Пн 09:21] will be linked also at the directory above
+L$PWD/..
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/build_linux.sh::L$PWD/..]]
+** [2022-04-11 Пн 09:19] Where to find include directories persisted in the code
+-I$PWD/..
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/build_linux.sh::-I$PWD/..]]
 ** [2022-04-08 Пт 14:54] response structure
 struct calc_proto_resp_t {
 
