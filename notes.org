@@ -1,4 +1,5 @@
 * Inbox
+<<<<<<< HEAD
 ** [2022-04-10 Вс 17:02] looks like defining global instance of cstack_type
 typedef struct cstack_type cstack_t;
 
@@ -11,6 +12,48 @@ typedef struct cstack_type cstack_t;
 polar_pos_2d_t (*func_ptr)(cartesian_pos_2d_t*);
 
 [[file:~/repo/Extreme-C/ch03-object-files/ExtremeC_examples_chapter3_4.c::polar_pos_2d_t (*func_ptr)(cartesian_pos_2d_t*);]]
+=======
+** [2022-04-11 Пн 13:10] we let the loader know where it shoould look for  the shared objects
+LD_LIBRARY_PATH=$PWD/.. ./cstack_cpp.out
+
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/run_linux.sh::LD_LIBRARY_PATH=$PWD/.. ./cstack_cpp.out]]
+** [2022-04-11 Пн 09:21] will be linked also at the directory above
+L$PWD/..
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/build_linux.sh::L$PWD/..]]
+** [2022-04-11 Пн 09:19] Where to find include directories persisted in the code
+-I$PWD/..
+[[file:~/repo/extremeC/ch21-integration-with-other-languages/c++/build_linux.sh::-I$PWD/..]]
+** [2022-04-08 Пт 14:54] response structure
+struct calc_proto_resp_t {
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_resp.h::struct calc_proto_resp_t {]]
+** [2022-04-07 Чт 11:26] look how to serialize double
+void _serialize_double(char* str, double num) {
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_ser.c::void _serialize_double(char* str, double num) {]]
+** [2022-04-07 Чт 09:56] look like function prototype
+typedef void (*req_cb_t)(
+
+[[file:~/repo/extremeC/ch20-socket-programming/calcser/calc_proto_ser.h::typedef void (*req_cb_t)(]]
+** [2022-03-23 Ср 14:40] incompleteness!!!
+  // We have to have a pointer here since the type
+  // person_t is incomplete.
+  struct person_t* person;
+
+[[file:~/repo/extremeC/ch08-inheritance-and-polymorphism/ExtremeC_examples_chapter8_3_student.c::// We have to have a pointer here since the type
+ // person_t is incomplete.
+ struct person_t* person;]]
+** [2022-03-22 Вт 14:16] You cannot even declare a variable out of it !!! (loot at the book)
+  struct list_t* list1 = list_malloc();
+
+[[file:~/repo/extremeC/ch06-oop-and-encapsulation/ExtremeC_examples_chapter6_3_main.c::struct list_t* list1 = list_malloc();]]
+** [2022-03-18 Пт 10:06] address of ptr and memory allocated there
+  printf("Address of ptr1: %p\n", (void*)&ptr1);
+  printf("Memory allocated by malloc at %p: ", (void*)ptr1);
+
+[[file:~/repo/extremeC/ch05-stack-and-heap/ExtremeC_examples_chapter5_3.c::printf("Address of ptr1: %p\n", (void*)&ptr1);
+ printf("Memory allocated by malloc at %p: ", (void*)ptr1);]]
+>>>>>>> faa115c67f58e549d4fdb256f234079033ecb0e8
 ** [2022-03-08 Вт 10:25] look at that. some enhanced iteration process
   for (int i = 0; i < sizeof(*var); i++, ptr++) {
 

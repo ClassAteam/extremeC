@@ -1,6 +1,11 @@
 *build*
+<<<<<<< HEAD
 *user*
 .projectile
+=======
+*idea*
+*user*
+>>>>>>> faa115c67f58e549d4fdb256f234079033ecb0e8
 *.s
 *.o
 *.obj

@@ -6,5 +6,6 @@ int global_var2;
 int global_var3 = 0;
 
 int main(int argc, char** argv) {
+  /* static int main_integer = 25; */
   return 0;
 }
