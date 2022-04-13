@@ -1,5 +1,45 @@
 * Inbox
 <<<<<<< HEAD
+** [2022-04-12 Вт 16:00] The option "--wrap=rand" tells the linker to update the entry for the symbol "ran" in the final executable's symbol table, which is going to refer to the definition of the __weap_rand function
+int __wrap_rand() {
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_2_cmocka_tests_with_stub.c::int __wrap_rand() {]]
+** [2022-04-12 Вт 15:58] substitute of the function wich made by "-Wl,--wrap=rand" in gcc compiler
+int __wrap_rand() {
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_2_cmocka_tests_with_stub.c::int __wrap_rand() {]]
+** [2022-04-12 Вт 15:33] assert_int_equal instead of using an ordinary assert call allows CMocka to print a helpful message in the execution log instead of just terminating the program
+  assert_int_equal(next_even_number(), 1);
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1_cmocka_tests.c::assert_int_equal(next_even_number(), 1);]]
+** [2022-04-12 Вт 15:07] In addition to test case functions, you see two new functions: setup and tear_down. As we said before, these functions are called test fixtures. Test fixtures are called before and after every test case and their responsibility is to set up and tead down the test case.
+int setup(void** state) {
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1_cmocka_tests.c::int setup(void** state) {]]
+** [2022-04-12 Вт 15:04] In CMocka, every test case should return void and receive a void** argument. The pointer argument will be used to receive a piece of information, called a state, which is specific to a test case.
+void calc_factorial__fact_of_zero_is_one(void** state) {
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1_cmocka_tests.c::void calc_factorial__fact_of_zero_is_one(void** state) {]]
+** [2022-04-12 Вт 14:57] so prototype is void func(void** state) but somehow it is get called without "state" arg. wtf?
+    cmocka_unit_test(next_even_number__even_numbers_should_be_returned),
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1_cmocka_tests.c::cmocka_unit_test(next_even_number__even_numbers_should_be_returned),]]
+** [2022-04-12 Вт 13:57] looks like forward declaration causer there is no included header
+void TESTCASE_next_even_number__even_numbers_should_be_returned();
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1_tests.c::void TESTCASE_next_even_number__even_numbers_should_be_returned();]]
+** [2022-04-12 Вт 09:44] How to define a pointer to a function
+typedef int64_t (*int64_feed_t)();
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1.h::typedef int64_t (*int64_feed_t)();]]
+** [2022-04-12 Вт 09:40] call to function poniter
+int64_t calc_factorial(int64_feed_t feed) {
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1.c::int64_t calc_factorial(int64_feed_t feed) {]]
+** [2022-04-12 Вт 09:27] As you can see, the function calc_factorial accepts a function pointer that returns an integer. It will use the function pointer in order to read an integer and calculate its factorial.
+int64_t calc_factorial(int64_feed_t feed);
+
+[[file:~/repo/extremeC/ch22-unit-testing-and-debugging/ExtremeC_examples_chapter22_1.h::int64_t calc_factorial(int64_feed_t feed);]]
 ** [2022-04-10 Вс 17:02] looks like defining global instance of cstack_type
 typedef struct cstack_type cstack_t;
 
