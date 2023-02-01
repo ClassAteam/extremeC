@@ -1,5 +1,18 @@
 * Inbox
 <<<<<<< HEAD
+** [2023-02-01 Ср 10:26] return only a pointer but whole structure allocates
+  return (person_t*)malloc(sizeof(person_t));
+
+  all this done for a one call;
+
+[[file:~/repo/extremeC/ch08-inheritance-and-polymorphism/ExtremeC_examples_chapter8_2_person.c::return (person_t*)malloc(sizeof(person_t));]]
+** [2022-12-01 Чт 11:55] odd allocation
+    context.addr = (struct client_addr_t*)
+
+[[file:~/repo/extremeC/ch20-socket-programming/server/srvcore/datagram_server_core.c::context.addr = (struct client_addr_t*)]]
+** [2022-11-30 Ср 14:32] Here is request callback which is responsible for writing the respond
+
+[[file:~/repo/extremeC/ch20-socket-programming/server/srvcore/common_server_core.c::void request_callback(void* obj, struct calc_proto_req_t req) {]]
 ** [2022-04-12 Вт 16:00] The option "--wrap=rand" tells the linker to update the entry for the symbol "ran" in the final executable's symbol table, which is going to refer to the definition of the __weap_rand function
 int __wrap_rand() {
 
